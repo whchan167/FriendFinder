@@ -2,7 +2,7 @@
 // DEPENDENCIES
 // Series of npm packages that we will use to give our server useful functionality
 // ==============================================================================
-
+var path = require('path');
 var express = require("express");
 var bodyParser = require("body-parser");
 
@@ -23,6 +23,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(express.static('app'));
 
 // ================================================================================
 // ROUTER
@@ -30,8 +31,8 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 // These routes give our server a "map" of how to respond when users visit or request data from various URLs.
 // ================================================================================
 
-require("../FriendFinder/app/routing/apiRoutes")(app);
-require("../FriendFinder/app/routing/htmlRoutes")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 // ==============================================================================
 // LISTENER
