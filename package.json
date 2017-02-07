@@ -1,0 +1,27 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "express.js to create date matching site",
+  "main": "server.js",
+  "scripts": {
+    "test": "node npm",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whchan167/FriendFinder.git"
+  },
+  "keywords": [],
+  "author": "wen chan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whchan167/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/whchan167/FriendFinder#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7"
+  }
+}
