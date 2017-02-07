@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "description": "express.js to create friend matching site",
   "main": "server.js",
-  "scripts": ""
+  "scripts": {
+    "start": "node server.js",
+    "build": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/whchan167/FriendFinder.git"
+    "url": "https://github.com/whchan167/FriendFinder.git"
   },
-  "keywords": [],
   "author": "wen chan",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/whchan167/FriendFinder/issues"
-  },
   "homepage": "https://github.com/whchan167/FriendFinder#readme",
   "dependencies": {
     "body-parser": "^1.16.0",
